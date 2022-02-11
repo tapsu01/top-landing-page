@@ -14,6 +14,16 @@ footer {
   background-color: #1f2937;
 }
 
+header {
+  padding-top: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #e5e7eb;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -25,6 +35,17 @@ nav a.logo {
   font-size: 24px;
   color: #f9faf8;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+nav .logo__icon {
+  background-image: linear-gradient(45deg, #3023ae 0%, #f09 100%);
+  border-radius: 46% 54% 56% 44% / 64% 60% 40% 36%;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-right: 6px;
 }
 
 nav ul {
@@ -41,14 +62,149 @@ nav ul li a {
   display: block;
 }
 
+header h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #f9faf8;
+}
+
+.hero-wrapper {
+  padding: 60px 0 100px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-text {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.hero-text p {
+  color: #e5e7eb;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.hero-img {
+  background-image: linear-gradient(45deg, #3023ae 0%, #f09 100%);
+  /* border-radius: 35% 65% 58% 42% / 57% 25% 75% 43%; */
+  border-radius: 35% 65% 80% 20% / 57% 25% 75% 43%;
+  height: 500px;
+  flex: 1;
+}
+
+.btn-signup {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 18px;
+  padding: 6px 25px;
+  margin-top: 12px;
+}
+
+header .btn-signup {
+  background-color: #3382f6;
+  color: #e5e7eb;
+}
+
+.call2action .btn-signup {
+  background-color: transparent;
+  border: solid 1px #f9faf8;
+  color: #f9faf8;
+}
+
+.info-section .container {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.info-section h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1f2937;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.info-items {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  --column: 4;
+  --gutter: 120px;
+}
+
+.info-item {
+  width: calc((100% - var(--gutter)) / var(--column));
+}
+
+.info-item .info-item__cover {
+  border-radius: 10px;
+  border: 3px solid #3882f6;
+  aspect-ratio: 1;
+}
+
+.info-item .info-item__cover div {
+  width: 100%;
+  height: 100%;
+  border-radius: 35% 65% 54% 46% / 57% 25% 75% 43%;
+  background-image: linear-gradient(45deg, #3023ae 0%, #f09 100%);
+}
+
+.info-item p {
+  margin-top: 6px;
+  text-align: center;
+}
+
+.quote-section {
+  background-color: #e5e7eb;
+  padding: 100px 0;
+}
+
+.quote-section .container {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.quote-section p:first-child {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 300;
+  color: #1f2937;
+}
+
+.quote-section p:last-child {
+  font-weight: 700;
+  text-align: right;
+  font-size: 18px;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
 }
 
-@media screen and (min-width: 1200px) {
+.call2action {
+  padding: 100px 0;
+  color: #f9faf8;
+}
+
+.call2action .container {
+  display: flex;
+  background-color: #3882f6;
+  border-radius: 8px;
+  padding: 50px 100px;
+  justify-content: space-between;
+}
+
+.call2action p:first-child {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 1170px) {
   .container {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1170px;
   }
 }
